@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    nav {      
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:#D1A9F2;
+      padding: 15px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+
+    .nav-center {
+      position: absolute;
+      left: 28%;
+      transform: translateX(-50%);
+      font-size: 45px;
+      font-weight:bold;
+      color:Black;
+    }
+
+    .nav-links {
+      font-size: 20px;
+      display: flex;
+      gap: 45px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color:Black;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: lightgrey;
+    }
+
+    .login-button {
+      background-color: #D8BFD8;       
+      color: #4B0082;                
+      font-size: 17px;               
+      padding: 8px 10px;              
+      border: none;
+      border-radius: 10px;            
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .login-button:hover {
+      background-color: #C8A2C8;   
+      transform: scale(1.05);       
+    }
+
+    .form {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background-color:#D8BFD8;
+      border: 3px solid rgb(105, 104, 104);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+ <nav>
+    <div class="logo"><img src="E:\HTML\Form 2\logo.jpeg" width="150px" height="150px"></div>
+    <div class="nav-center">Scene Booking</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="details.html">Details</a>
+      <a href="More info.html">More Info</a>
+      <a href="Login.html">Sign In</a>
+      <a href="Registration form.html">Sign Up</a>
+    </div>
+  </nav>
+
+  
+
+  <div class="form">
+    <center><h2>Login Form</h2></center>
+    <form>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" placeholder="Enter your Name"></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" placeholder="Enter your password"></td>
+        </tr>
+        <tr>
+          <td>Confirm Password:</td>
+          <td><input type="password" placeholder="Confirm password"></td>
+        </tr>
+        <tr><center>         
+          <td><a href="Registration form.html"><input type="button" value="Back" class="back-button"></a></td>
+        <td><a href="index.html"><input type="button" value="Login" class="login-button"></a></td>
+        </center></tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

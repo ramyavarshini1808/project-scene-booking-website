@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {      
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:#D1A9F2;
+      padding: 15px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+
+    .nav-center {
+      position: absolute;
+      left: 28%;
+      transform: translateX(-50%);
+      font-size: 45px;
+      font-weight:bold;
+      color:Black;
+    }
+
+    .nav-links {
+      font-size: 20px;
+      display: flex;
+      gap: 45px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color:Black;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: lightgrey;
+    }
+
+.slider {
+      width: 100%;
+      max-width: 1200px;
+      overflow: hidden;
+      margin: 20px auto;
+      border-radius: 10px;
+      background-size: cover;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      width: max-content;
+      animation: slideAnim 15s linear infinite;
+    }
+    .slides img {
+      height: 300px;
+      width: ;
+      flex-shrink: 0;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+      @keyframes slideAnim {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @media (max-width: 800px) {
+      .slides img {
+        height: 90px;
+        width: 100px;
+      }
+    }
+ 
+.slider-wrapper {
+  background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url('slide wrapper.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+ 
+.content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px
+  color: #333;
+  line-height: 1.6; 
+  position: relative;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #4B0082; 
+  text-align: center;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+ .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.table th,
+.table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #D1A9F2;
+}
+
+.footer { 
+      background: lightgrey; 
+      color: black; 
+      text-align: center; 
+      padding: 10px; 
+      margin-top: 40px; 
+      font-weight: bold; 
+    } 
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><img src="E:\HTML\Form 2\logo.jpeg" width="150px" height="150px"></div>
+    <div class="nav-center">Scene Booking</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="details.html">Details</a>
+      <a href="More info.html">More Info </a>
+      <a href="Login.html">Sign In</a>
+      <a href="Registration form.html">Sign Up</a>
+    </div>
+  </nav>
+<br> 
+<div class="slider-wrapper">
+<div class="slider">
+<div class="slides">
+      <img src="555.jpg" /> 
+      <img src="111.jpg" /> 
+      <img src="222.jpg" /> 
+      <img src="444.jpg" /> 
+      <img src="333.jpg" /> 
+    </div> 
+  </div>
+</div>
+
+  <div class="content">
+  <h1>About Scene Booking</h1>
+  <p>Scene Booking is your one-stop platform for booking scenic venues for all types of events – from film shoots to weddings and more. We provide a curated selection of unique locations, making planning easier and more creative.</p>
+
+  <p>Our goal is to make the process of location scouting seamless and accessible. With just a few clicks, you can explore, inquire, and book stunning spots that elevate your event or production to the next level.</p>
+</div>
+
+<center>
+<h1 style="font-size: 36px; color: #4B0082; margin-left:30px;">Our Activities</h1>
+<p style="font-size: 18px; color: black; margin-left:25px;">Discover handpicked activities that unite people through interactive experiences and creative projects, suitable for all ages and interests !</p>
+
+<div class="table">
+<table>
+<tr>
+<th>Activities</th>
+<th>Price</th>
+<th>Location</th>
+<th>slot</th>
+</tr>
+
+<tr>
+<td>Arclic paint party</td>
+<td>Rs. 999</td>
+<td>Anna Nagar, Besant nagar</td>
+<td>Morning and Evening</td>
+</tr>
+
+<tr>
+<td>Bottle art</td>
+<td>Rs. 899</td>
+<td>Kodambakkam</td>
+<td>Noon and Evening</td>
+</tr>
+
+<tr>
+<td>Calligraphy</td>
+<td>Rs. 1099</td>
+<td>Anna Nagar, Tambaram</td>
+<td>Evening</td>
+</tr>
+
+<tr>
+<td>Knit Bag Workshop</td>
+<td>Rs. 1699</td>
+<td>Kilpauk</td>
+<td>Morning and Noon</td>
+</tr>
+
+<tr>
+<td>Resin Art</td>
+<td>Rs. 2000</td>
+<td> Besant nagar</td>
+<td>Noon</td>
+</tr>
+</table>
+</center>
+</div>
+
+
+<br>
+<center>
+<h1 style="font-size: 36px; color: #4B0082; margin-left:30px;">Our Workshops & Live Events</h1>
+<p style="font-size: 18px; color: black; margin-left:25px;">Join our diverse workshop and live events led bt experts, covering arts and professional development and more curated for all skill levels !</p>
+
+<div class="table">
+<table>
+<tr>
+<th>Workshop</th>
+<th>Price</th>
+<th>Location</th>
+<th>slot</th>
+</tr>
+
+<tr>
+<td>Bottle Art and Bottle Decoupage</td>
+<td>Rs. 699-999</td>
+<td>Kodambakkam</td>
+<td>2.00PM-4.00PM</td>
+</tr>
+
+<tr>
+<td>Bottle art</td>
+<td>Rs. 899</td>
+<td>Kodambakkam</td>
+<td>Noon and Evening</td>
+</tr>
+
+<tr>
+<td>Artery June</td>
+<td>Rs. 599-699</td>
+<td>Kilpauk</td>
+<td>10.30PM-2.30PM</td>
+</tr>
+
+<tr>
+<td>Spotlight(Live Event)</td>
+<td>Rs. 379</td>
+<td>Kodambakkam</td>
+<td>4.00PM-7.00PM</td>
+</tr>
+
+<tr>
+<td>Musical Journaling(Live event)</td>
+<td>Rs. 299</td>
+<td>T. nagar</td>
+<td>5.00PM-7.00PM</td>
+</tr>
+</table>
+</center>
+</div>
+
+<div class="list" style="max-width: 700px; margin: 40px auto; padding: 20px;">
+  <h1 style="font-size: 28px; color: #4B0082; text-align: center; margin-bottom: 20px;">How To Book Events</h1>
+  <ol style="font-size: 18px; color: #333; line-height: 1.6; padding-left: 20px;">
+    <li>
+      <strong>Explore:</strong> Explore a variety of events and activities to find the perfect one for your occasion.
+    </li>
+    <li>
+      <strong>Book Event:</strong> Search, book your experience, and receive details via WhatsApp and email.
+    </li>
+    <li>
+      <strong>Experience:</strong> Enjoy the event with everything handled, so you can focus on making memories.
+    </li>
+  </ol>
+</div>
+
+
+<center>
+<p>Follow us More on</p>
+ <a href="https://www.facebook.com/scene.booking/"><img src="facebook.png" alt="Facebook logo" width="40" height="40"></a> 
+ <a href="https://www.instagram.com/scene.booking/"><img src="instagram.png" alt="Instagram logo" width="40" height="40"></a> 
+ <a href="https://www.linkedin.com/company/scenebooking/"><img src="LinkedIn.png" alt="LinkedIn logo" width="40" height="40"></a>
+</center> 
+<div class="footer">
+<footer>
+<p>&copy; 2025 scenebooking | All rights reserved</p>
+</div> 
+</footer> 
+ 
+</body>
+</html>
